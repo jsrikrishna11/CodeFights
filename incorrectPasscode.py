@@ -50,3 +50,26 @@ true if 10 or more consecutive failed passcode attempts were made, false otherwi
 """
 
 import unittest
+def incorrectPasscodeAttempts(passcode, attempts):
+    wrongAttempts = 0
+    for i in attempts:
+        if (i == passcode and wrongAttempts<10):
+            wrongAttempts = 0
+        else:
+            wrongAttempts+=1
+    if(wrongAttempts<10):
+        return False 
+    return True
+
+print(incorrectPasscodeAttempts("1112", ["1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111", 
+ "1111"] ))    
