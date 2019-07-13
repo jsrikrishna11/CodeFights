@@ -70,12 +70,6 @@ emails: ["a@rain.ifmo.ru",
  "e@rain.ifmo.ru", 
  "noname@mit.edu"]
 
-Expected Output:
-["rain.ifmo.ru", 
- "mit.edu"]
-
-
-
 The list of unique school domains sorted as described above
 """
 from collections import defaultdict
